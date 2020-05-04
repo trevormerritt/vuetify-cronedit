@@ -1,4 +1,4 @@
-import CronEditor from '@/CronEditor';
+import CronEditor from './CronEditor';
 
 export default {
     install (Vue, options) {
