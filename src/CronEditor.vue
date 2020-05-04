@@ -31,8 +31,8 @@
   </div>
 </template>
 <script>
-import AdvancedEditor from "@/AdvancedEditor";
-import SimpleEditor from '@/SimpleEditor';
+import AdvancedEditor from "./parts/AdvancedEditor.vue";
+import SimpleEditor from './parts/SimpleEditor.vue';
 
 export default {
   name: "CronEditor",

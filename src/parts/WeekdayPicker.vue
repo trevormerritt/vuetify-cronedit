@@ -39,7 +39,7 @@
   </v-card>
 </template>
 <script>
-import array2string from "@/mixins/array2string";
+import array2string from '../mixins/array2string'
 
 export default {
   name: "WeekdayPicker",
