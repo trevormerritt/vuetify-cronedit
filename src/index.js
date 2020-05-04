@@ -1,7 +1,13 @@
 import CronEditor from './CronEditor';
 
 export default {
-    install (Vue, options) {
-        Vue.component('vuetify-cronedit', CronEditor);
+    install (Vue) {
+        Vue.component(CronEditor.name, CronEditor);
+
+        Vue.mixin({
+            mounted() {
+                console.log('CronEditor->Mounted');
+            }
+        })
     }
 };
