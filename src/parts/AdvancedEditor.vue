@@ -20,11 +20,11 @@
   </v-container>
 </template>
 <script>
-import MinutePicker from "@/parts/MinutePicker";
-import DayPicker from "@/parts/DayPicker";
-import HourPicker from "@/parts/HourPicker";
-import MonthPicker from "@/parts/MonthPicker";
-import WeekdayPicker from "@/parts/WeekdayPicker";
+import MinutePicker from "./MinutePicker.vue";
+import DayPicker from "./DayPicker.vue";
+import HourPicker from "./HourPicker.vue";
+import MonthPicker from "./MonthPicker.vue";
+import WeekdayPicker from "./WeekdayPicker.vue";
 
 export default {
   name: "CronEditorAdvancedEditor",
