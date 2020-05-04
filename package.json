@@ -1,0 +1,35 @@
+{
+  "private": false,
+  "name": "vuetify-cronedit",
+  "version": "0.0.1",
+  "description": "Crontab string editor for Vuetify",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "vue serve SimpleEditor",
+    "build": "bili --name index --plugin vue --vue.css false",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevormerritt/vuetify-cronedit.git"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "keywords": [
+    "vuetify",
+    "crontab"
+  ],
+  "author": "Trevor Merritt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevormerritt/vuetify-cronedit/issues"
+  },
+  "homepage": "https://github.com/trevormerritt/vuetify-cronedit#readme",
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0-beta.7",
+    "bili": "^4.9.4",
+    "rollup-plugin-vue": "^6.0.0-alpha.7",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
