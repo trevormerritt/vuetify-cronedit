@@ -1,6 +1,6 @@
 {
   "name": "vuetify-cronedit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Crontab string editor for Vuetify",
   "main": "dist/vuetify-cronedit.umd.js",
   "module": "dist/vuetify-cronedit.esm.js",

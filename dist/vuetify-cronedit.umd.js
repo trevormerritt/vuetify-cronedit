@@ -1805,10 +1805,7 @@
     var script$7 = {
         name: 'vuetifyCronedit',
         created: function created() {
-            console.log('vuetifyCronedit', this.cron);
-            // can we parse the CRON to something we can use?
-
-            // if not lock to advanced.
+            this.crontab = this.cron;
         },
         components: {
         AdvancedEditor: __vue_component__$5,
@@ -1816,7 +1813,7 @@
       },
       props: {
         cron: {
-          type: Number,
+          type: String,
           required: false
         }
       },
@@ -1827,12 +1824,11 @@
       },
       methods: {
         update: function update(newValue) {
-            console.log('vuetify-cronedit:update', newValue);
+          console.log('vuetify-cronedit:update', newValue);
           this.crontab = newValue;
           this.$emit('changed', newValue);
         }
       }
-
     };
 
     /* script */

@@ -5,7 +5,6 @@
         <v-toolbar-title>Schedule</v-toolbar-title>
       </v-toolbar>
       <v-card-text>
-        <p>{{crontab}}</p>
         <v-tabs>
           <v-tab>Simple Mode</v-tab>
           <v-tab>Advanced Mode</v-tab>
@@ -36,10 +35,7 @@ import SimpleEditor from './parts/SimpleEditor.vue';
 export default {
     name: 'vuetifyCronedit',
     created() {
-        console.log('vuetifyCronedit', this.cron);
-        // can we parse the CRON to something we can use?
-
-        // if not lock to advanced.
+        this.crontab = this.cron;
     },
     components: {
     AdvancedEditor,
@@ -47,7 +43,7 @@ export default {
   },
   props: {
     cron: {
-      type: Number,
+      type: String,
       required: false
     }
   },
@@ -58,11 +54,10 @@ export default {
   },
   methods: {
     update(newValue) {
-        console.log('vuetify-cronedit:update', newValue);
+      console.log('vuetify-cronedit:update', newValue);
       this.crontab = newValue;
       this.$emit('changed', newValue);
     }
   }
-
 }
 </script>
